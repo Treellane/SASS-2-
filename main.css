@@ -1,0 +1,47 @@
+/*function for converting pixels to em. It has 2 parameters: value and base */
+/*now that the rule is created, we can call on it when we need it, like <h1> below!!! */
+h1 {
+  font-size: 2em;
+  color: #ffffff; }
+
+/*Here we are setting variables for colours*/
+/*We are using the variable here - this saves use retyping the Hex code all the time!*/
+body {
+  background-color: #09973d; }
+
+/*Here we set variables for width and height. Each time we call on there, we will get the same width */
+/* and height as we have set here...*/
+div {
+  width: 300px;
+  height: 500px;
+  border: 1px solid #ffffff; }
+
+/*We can also make MAPS is SASS, where we set up KEY / VALUE pairs, as below...*/
+/*here we set up the color keys (name) with their values (the hex code)*/
+/*...then here is set the shorthand rule to tansalte them to CSS... */
+/*  .. for EACH key item in the $colors list above, we get a CSS code line with the color, */
+/* and it's Hex code applied to the background colour */
+.item-black {
+  background-color: #000000; }
+
+.item-white {
+  background-color: #ffffff; }
+
+.item-red {
+  background-color: #e84610; }
+
+.item-green {
+  background-color: #bada55; }
+
+.item-blue {
+  background-color: #09973d; }
+
+/* THEN is we set a class in HTML (eg: div class="item-green", the color will be pulled from */
+/* this color code list, and long as the class is named 'item-($key), where $key is the color*/
+/* how to pass a variable to a CSS class*/
+/*create a variable called class, with its value as container: ;*/
+div.container {
+  /*in CSS this will create a div.container class, with an orange background*/
+  background-color: orange; }
+
+/*# sourceMappingURL=main.css.map */
